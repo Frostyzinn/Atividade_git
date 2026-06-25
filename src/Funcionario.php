@@ -3,10 +3,12 @@
 class Funcionario {
     private $nome;
     private $idade;
+    private $cargo;
 
-    public function __construct($nome, $idade) {
+    public function __construct($nome, $idade, $cargo) {
         $this->nome = $nome;
         $this->idade = $idade;
+        $this->cargo = $cargo;
     }
 
     public function getNome() {
@@ -17,6 +19,10 @@ class Funcionario {
         return $this->idade;
     }
 
+    public function getCargo() {
+        return $this->cargo;
+    }
+
     public function setNome($nome) {
         $this->nome = $nome;
     }
@@ -25,7 +31,9 @@ class Funcionario {
         $this->idade = $idade;
     }
 
-  
+    public function setCargo($cargo) {
+        $this->cargo = $cargo;
+    }
 }
 
 ?>
